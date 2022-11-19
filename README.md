@@ -12,6 +12,12 @@ To use:
 $ docker run --privileged --pid=host docker/desktop-reclaim-space
 ```
 
+```
+docker system prune
+wsl --shutdown
+Optimize-VHD -path ${env:LOCALAPPDATA}\Docker\wsl\data\ext4.vhdx -Mode Full
+```
+
 On Mac using a `Docker.raw`, the effect should be instant. To see the true size of the `Docker.raw` use:
 ```
 $ cd ~/Library/Containers/com.docker.docker/Data/vms/0/data
